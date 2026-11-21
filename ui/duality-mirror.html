@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Duality Synthesis Mirror</title>
+  <style>
+    body { font-family: system-ui; display: flex; height: 100vh; margin: 0; background: #111; color: #eee; }
+    .side { flex: 1; padding: 2rem; }
+    .solan { background: linear-gradient(135deg, #ff6b00, #ff00ff); }
+    .lumari { background: linear-gradient(135deg, #003366, #00ccff); }
+    h1 { margin-top: 0; }
+  </style>
+</head>
+<body>
+  <div class="side solan">
+    <h1>🔥 Solan Hyphy Synthesis</h1>
+    <p>Spontaneous mix of similar-category methods → new idea gems.</p>
+    <textarea id="ideas" rows="6" style="width:100%" placeholder="Dump similar strategies here..."></textarea>
+    <button onclick="synthesize()">Synthesize Gem</button>
+    <div id="gem"></div>
+  </div>
+  <div class="side lumari">
+    <h1>🛡️ Lumari Grounded Sales</h1>
+    <p>Mirror: turns gem into executing Cloudflare Workflow structure.</p>
+    <p>Cart → sleep → payment retry → invoice → telemetry log.</p>
+    <div id="workflow">Ready for deploy.</div>
+  </div>
+  <script>
+    function synthesize() {
+      const input = document.getElementById('ideas').value;
+      document.getElementById('gem').innerHTML = '<strong>Gem:</strong> Dual-read sales mirror of: ' + input.slice(0,80) + '...';
+      document.getElementById('workflow').innerHTML = 'Workflow triggered for new idea → sales structure.';
+    }
+  </script>
+</body>
+</html>
